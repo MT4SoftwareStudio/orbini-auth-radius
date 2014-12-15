@@ -264,7 +264,6 @@ class Orbini_Auth_Adapter_Radius implements Zend_Auth_Adapter_Interface
                     array(radius_strerror($this->_radius))
                 );
             default:
-                var_dump($result);
                 return new Zend_Auth_Result(
                     Zend_Auth_Result::FAILURE_UNCATEGORIZED, 
                     $this->getUsername(), 
